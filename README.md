@@ -1,3 +1,3 @@
-Login System using jetstrem done
-Customize transfer page
-Customize dashboard
+Login System using jetstrem.....Done
+Customize transfer page.........Complete
+Customize dashboard.............Complete

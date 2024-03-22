@@ -24,7 +24,7 @@
            <img src="https://cdn4.vectorstock.com/i/1000x1000/25/28/bank-transfer-icon-simple-element-from-banking-vector-34052528.jpg"
             alt="" style="width:100px;hieght:100px">
             <h2 class="ms-3 text-xl font-semibold text-gray-900">
-                <a href="https://laravel.com/docs">Transfer</a>
+                <a href="{{ route('create_trf') }}">Transfer</a>
             </h2>
         </div>
 
@@ -33,7 +33,7 @@
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="https://laravel.com/docs" class="inline-flex items-center font-semibold text-indigo-700">
+            <a href="{{ route('create_trf') }}" class="inline-flex items-center font-semibold text-indigo-700">
                Go to Transfer
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ms-1 w-5 h-5 fill-indigo-500">
@@ -45,9 +45,9 @@
 
     <div>
         <div class="flex items-center">
-           <img src="https://th.bing.com/th/id/OIP.7wJD_H9edsTAjv5BNPyC6wAAAA?w=138&h=150&c=7&r=0&o=5&dpr=2&pid=1.7" alt="" style="hieght:100px;width:100px;">
+           <img src="https://www.bing.com/th?id=OIP.ymEUbl8s2t2yzvdNqwOCyAHaHa&pid=3.1&cb=&w=300&h=300&p=0" alt="" style="hieght:100px;width:100px;">
             <h2 class="ms-3 text-xl font-semibold text-gray-900">
-                <a href="https://laracasts.com">Profile</a>
+                <a href="{{ route('profile.show') }}">Profile</a>
             </h2>
         </div>
 
@@ -56,7 +56,7 @@
         </p>
 
         <p class="mt-4 text-sm">
-            <a href="https://laracasts.com" class="inline-flex items-center font-semibold text-indigo-700">
+            <a href="{{ route('profile.show') }}" class="inline-flex items-center font-semibold text-indigo-700">
                Go to Profile Settings
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="ms-1 w-5 h-5 fill-indigo-500">

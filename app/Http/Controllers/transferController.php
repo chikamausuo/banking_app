@@ -19,6 +19,6 @@ class transferController extends Controller
     }
 
     public function reciept_trf(){
-        return "reciept_trf form";
+        return view('reciept');
     }
 }
