@@ -16,8 +16,17 @@
         </div>
     </div>
 </div>
+<!----beneficiary---->
+<div class="bg-white rounded-lg shadow-lg p-6">
+    <div class="text-xl font-bold mb-4">Beneficiary</div>
+    <div class="border-t border-gray-200 pt-4">
+        <p class="mb-2"><span class="font-bold">Name:</span> {{Auth()->next_kin_name}}</p>
+        <p class="mb-2"><span class="font-bold">Email:</span> {{Auth()->next_kin_name}}</p>
+       
+    </div>
+</div>
 
-
+<!----beneficiary---->
 <div class="bg-gray-200 bg-opacity-25 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-6 lg:p-8">
     <div>
         <div class="flex items-center">

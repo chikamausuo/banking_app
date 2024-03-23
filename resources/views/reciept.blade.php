@@ -76,8 +76,11 @@
                     </tr>
 
                     <tr>
-                        <td class="border px-4 py-2" colspan="2">
-                            <a href="{{ route('after_trf_dashboard',['user_id'=>$transfer->user_id] )}}">
+                        <td class="border px-4 py-2" colspan="2" style="
+                        background-color: black;
+                        color: ghostwhite;
+                    ">
+                            <a href="{{ route('dashboard' )}}">
                             <center>Go To Dashboard</center>
                             </a>
                         </td>
