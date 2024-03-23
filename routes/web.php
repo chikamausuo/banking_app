@@ -25,10 +25,12 @@ Route::middleware([
 ////////////////////////////////////////////transfer route///////////////////////////////////////
 
 //create route
-Route::get('/create_trf', [TransferController::class, 'create_trf'])->name('create_trf');
+Route::get('/create_trf/{user_id}',     [TransferController::class, 'create_trf'])->name('create_trf');
 //store route
-Route::get('/store_trf', [TransferController::class, 'store_trf'])->name('store_trf');
+Route::post('/store_trf',     [TransferController::class, 'store_trf'])->name('store_trf');
 //update route
-Route::get('/update_trf', [TransferController::class, 'update_trf'])->name('update_trf');
+Route::get('/update_trf',      [TransferController::class, 'update_trf'])->name('update_trf');
 //reciept route
-Route::get('/reciept_trf', [TransferController::class, 'reciept_trf'])->name('reciept_trf');
+Route::get('/reciept_trf/{user_id}',[TransferController::class, 'reciept_trf'])->name('reciept_trf');
+//dashboard route
+Route::get('/after_trf_dashboard/{user_id}',  [TransferController::class, 'after_trf_dashboard'])->name('after_trf_dashboard');

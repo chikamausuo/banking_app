@@ -8,25 +8,41 @@
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
+            
+       
+            <div>
+                <x-label for="name" value="{{ __('Next of kin Email') }}" />
+                <x-input id="name" class="block mt-1 w-full" type="text" name="next_kin_email" :value="old('name')" required autofocus autocomplete="name" />
+            </div>
 
             <div>
+                <x-label for="name" value="{{ __('Next of kin Name') }}" />
+                <x-input id="name" class="block mt-1 w-full" type="text" name="next_kin_name" :value="old('name')" required autofocus autocomplete="name" />
+            </div>
+
+            <div class="mt-4">
+                <x-label for="name" value="{{ __('Next of kin Address') }}" />
+                <x-input id="name" class="block mt-1 w-full" type="text"  value="11@11" name="next_kin_address" :value="old('name')" required autofocus autocomplete="name" />
+            </div>            
+
+            <div class="mt-4">
                 <x-label for="name" value="{{ __('Name') }}" />
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+                <x-input id="name" class="block mt-1 w-full" type="text" value="11@11" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+                <x-input id="email" class="block mt-1 w-full" type="email" value="11@11" name="email" :value="old('email')" required autocomplete="username" />
             </div>
 
             <div class="mt-4">
                 <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                <x-input id="password" class="block mt-1 w-full" type="password" value="11@123456789" name="password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
                 <x-label for="password_confirmation" value="{{ __('Confirm Password') }}" />
-                <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <x-input value="11@11" id="password_confirmation" class="block mt-1 w-full" type="password" value="11@123456789" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
